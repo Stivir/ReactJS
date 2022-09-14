@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import EmployeeService from '../services/EmployeeService'
 
 const AddEmployeeComponent = () => {
@@ -93,6 +93,7 @@ const AddEmployeeComponent = () => {
                     </div>
 
                     <button className ="btn btn-success" onClick = {(e) => saveEmployee(e)}>Submit</button>
+                <Link to="/employees" className="btn btn-danger"> Cancel </Link>
                  </form>
 
 
